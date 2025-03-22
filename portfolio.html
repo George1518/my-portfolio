@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            color: #222;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 50px;
+            background-color: #333;
+        }
+
+        nav .logo {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        /* About Section */
+        #about, #skills, #projects, #contact {
+            padding: 50px 20px;
+            background-color: #fff;
+            margin: 20px 0;
+        }
+
+        #about p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            padding: 10px 20px;
+            background-color: #2575fc;
+            color: white;
+            border-radius: 5px;
+        }
+
+        /* Projects Section */
+        .project-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #f4f4f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .project-card a {
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form input, #contact-form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        #contact-form button {
+            padding: 10px 20px;
+            background-color: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="resume.pdf" download>Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Guganraj</h1>
+            <p>Web Developer | Creative Designer | Problem Solver</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate web developer with expertise in HTML, CSS, JavaScript, and modern web technologies...</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Food Donation Website using HTML, CSS, JS, PHP, and MySQL.</p>
+                <a href="dummy.html">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Responsive E-commerce website with modern UI.</p>
+                <a href="dummy.html">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Guganraj. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Contact Form Submission
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(form);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+
+            if (name && email && message) {
+                alert('Thank you, ' + name + '! Your message has been sent.');
+                form.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
